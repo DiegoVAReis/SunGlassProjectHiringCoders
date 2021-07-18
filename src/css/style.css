@@ -279,8 +279,9 @@ footer .section-content .text-footer {
   color: #a6a6a6;
 }
 footer .section-content #footer-about {
-  flex-basis: 450px;
+  flex-basis: 423px;
   height: 173px;
+  padding-left: 27px;
 }
 footer .section-content #footer-about .footer-title {
   text-align: left;
@@ -312,8 +313,9 @@ footer .section-content #footer-conect li a #logo-github {
 }
 footer .section-content #footer-contact {
   height: 173px;
-  flex-basis: 308px;
+  flex-basis: 281px;
   text-align: right;
+  padding-right: 27px;
 }
 footer .section-content #footer-copyright {
   border-top: 1px solid #404040;

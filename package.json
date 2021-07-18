@@ -1,0 +1,18 @@
+{
+  "name": "sunglassprojecthiringcoders",
+  "version": "1.0.0",
+  "description": "Projeto para o Hiring Coders - Loja de Óculos ficticia chamada \"SunGlass\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sass --watch src/assets/sass/style.scss:src/css/style.css",
+    "build": "node-sass src/assets/sass/style.scss > src/css/style.css"
+  },
+  "keywords": [
+    "HiringCoders",
+    "Ecommerce",
+    "BlackFriday"
+  ],
+  "author": "DiegoVAReis",
+  "license": "MIT"
+}

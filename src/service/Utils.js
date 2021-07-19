@@ -10,7 +10,10 @@ form.addEventListener('submit', (e) => {
   e.preventDefault();
 
   let name = document.getElementById('nomeInput').value;
+  let nameElement = document.getElementById('nomeInput');
+
   let email = document.getElementById('emailInput').value;
+  let emailElement = document.getElementById('emailInput');
 
   if (!validateEmail(email)){
     /*Se o email não for válido retorna uma msg para o usuário abaixo do campo de email.*/
@@ -19,6 +22,8 @@ form.addEventListener('submit', (e) => {
     let messageErrorEmailInvalid = `<p> * Email inválido, por favor digite um e-mail válido.</p>`;
 
     elementError.innerHTML = messageErrorEmailInvalid;
+
+    emailElement.focus();
 
   }else {
 
@@ -47,20 +52,24 @@ form.addEventListener('submit', (e) => {
 
       localStorage.setItem('SunglassEmailRecepted', convertStringData);
 
+      let clearElement = ``;
+
       let elementError = document.getElementById('validate-msg');
-      let clearMessageEmailInvalid = ``;
-      elementError.innerHTML = clearMessageEmailInvalid;
+      elementError.innerHTML = clearElement;
 
-      let contentRegister = document.getElementById('content-register');
-      let contentRegisterCurrentHTML = document.getElementById('content-register').innerHTML;
+      let loadingRegister = document.getElementById('loading-register');
 
-      let loading = `<span>Enviando Informação...<img src="assets/images/loading.gif"></span>`
+      let loading = `<span><img src="assets/images/loading.gif" height="40px"></span><span> Enviando dados.</span>`
     
-      contentRegister.innerHTML = loading;
+      loadingRegister.innerHTML = loading;
     
       setTimeout(() => {
-        contentRegister.innerHTML = contentRegisterCurrentHTML
+        loadingRegister.innerHTML = clearElement;
       }, 1000)
+
+
+      nameElement.value = '';
+      emailElement.value = '';
   } 
 
 })

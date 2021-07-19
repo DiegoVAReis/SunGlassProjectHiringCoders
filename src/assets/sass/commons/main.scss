@@ -249,6 +249,24 @@ body{
             padding: 0px 3px; 
           }
 
+          & #loading-register {
+            width: 230px;
+            height: 40px;
+            margin: -43px 0 0 220px;
+            display: flex;
+            flex-direction: row;
+            
+            & span {
+              max-width: 230px;
+              margin-right: 10px;               
+              color: $colorMainOne;
+              font-family: $fontFamilyTertiary;   
+              font-size: 15px; 
+              line-height: 40px;       
+            }
+
+          }
+
         }
 
       }

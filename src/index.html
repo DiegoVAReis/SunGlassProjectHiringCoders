@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,38 +9,51 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>SunGlass</title>
 </head>
+
 <body>
+
+    <header>
+        <div class="header-content">
+
+            <div id="logo">
+                <a href="#" title="SunGlass"><img src="assets/images/logo-sunglasses.png" alt="Logo SungGlass"></a>
+            </div>
+
+            <div class="menu-section">
+                <div class="menu-toggle">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#footer">Contato</a>
+                        </li>
+                        <li>
+                            <a href="#card-register">Cadastre-se</a>
+                        </li>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
 
     <!--Section 1-->
     <section class="section-container background-section-one">
 
         <div class="section-content">
 
-            <div id="logo">
-                <a href="#" title="SunGlass"><img src="assets/images/logo-sunglasses.png" alt="Logo SungGlass"></a>
-            </div>
-
-            <nav id="menuBar">
-                <ul>
-                    <li>
-                        <a href="#footer">Contato</a>
-                    </li>
-                    <li>
-                        <a href="#card-register">Cadastre-se</a>
-                    </li>
-                    <li>
-                        <a href="#">Home</a>
-                    </li>    
-                    
-                </ul>
-            </nav>
-
             <div id="logo-black-friday">
-                <!--<img src="assets/images/logo-black-friday.png" alt="Logotipo"/>-->
+                <img src="assets/images/logo-black-friday.png" alt="Logotipo"/>
             </div>
 
         </div>
-        
+
     </section>
     <!--Fim Section 1-->
 
@@ -47,17 +61,6 @@
     <section class="section-container background-section-two">
 
         <div class="section-content">
-            <div id=photos>
-                <div id="photo-one">
-                    <img src="assets/images/photo-one.png" alt="Photo 1">
-                </div>
-                <div id="photo-three">
-                    <img src="assets/images/photo-three.png" alt="Photo 3">
-                </div>
-                <div id="photo-two">
-                    <img src="assets/images/photo-two.png" alt="Photo 2">
-                </div>                
-            </div>
 
             <div class="text-promotion">
                 <p id="text-promotion-one">Com até</p>
@@ -65,6 +68,19 @@
                 <p id="text-promotion-three">De desconto</p>
                 <p id="text-promotion-four">Em todos os produtos</p>
             </div>
+
+            <div id=photos>
+                <div id="photo-one">
+                    <img src="assets/images/photo-one.png" alt="Photo 1">
+                </div>                
+                <div id="photo-two">
+                    <img src="assets/images/photo-two.png" alt="Photo 2">
+                </div>
+                <div id="photo-three">
+                    <img src="assets/images/photo-three.png" alt="Photo 3">
+                </div>
+            </div>
+
         </div>
 
     </section>
@@ -72,7 +88,7 @@
 
     <!--Section 3 - Register-->
     <section class="section-container background-section-three">
-        
+
         <div class="section-content">
 
             <div class="card-register" id="card-register">
@@ -81,18 +97,19 @@
 
                 <div id="content-register">
                     <form id="formRegister">
-                        <input type="text" placeholder="qual seu nome?" name="nomeInput" id="nomeInput" value=""/>
-                        <input type="text" placeholder="digite seu melhor e-mail" name="emailInput" id="emailInput" value=""/>
+                        <input type="text" placeholder="qual seu nome?" name="nomeInput" id="nomeInput" value="" />
+                        <input type="text" placeholder="digite seu melhor e-mail" name="emailInput" id="emailInput"
+                            value="" />
                         <span id="validate-msg"></span>
-                        
-                        <input type="submit" value="cadastrar"/>
+
+                        <input type="submit" value="cadastrar" />
                         <div id="loading-register"></div>
                     </form>
                 </div>
             </div>
 
             <div class="card-image-calendar-face">
-                <img src="assets/images/img-calendar-face.png">
+                <img src="assets/images/img-calendar-face.svg">
             </div>
 
         </div>
@@ -101,14 +118,14 @@
     <!--Fim Section 3 - Register-->
 
     <!--Footer-->
-    <footer class="section-container" id="footer" >
-        
+    <footer class="section-container" id="footer">
+
         <div class="section-content">
 
             <div id="footer-about" class="text-footer">
                 <p class="footer-title">Sobre.</p>
-                <p class="footer-desc">Site desenvolvido para o Hiring Coders  da Gama Academy. <br /></p>
-                
+                <p class="footer-desc">Site desenvolvido para o Hiring Coders da Gama Academy. <br /></p>
+
                 <p class="footer-desc-two">Créditos das imagens:</p>
                 <ul>
                     <li><a href="https://icons8.com.br" target="_blank">Icons8.com</a></li>
@@ -119,25 +136,31 @@
             <div id="footer-conect" class="text-footer">
                 <p class="footer-title">Conecte-se.</p>
                 <ul>
-                    <li><a href="https://br.linkedin.com/in/diego-reis-86211691" target="_blank">Linkedin | <span id="logo-linkedin"></span></a></li>
-                    <li><a href="https://github.com/DiegoVAReis" target="_blank">GitHub | <span id="logo-github"></span></a></li>
+                    <li><a href="https://br.linkedin.com/in/diego-reis-86211691" target="_blank">Linkedin | <span
+                                id="logo-linkedin"></span></a></li>
+                    <li><a href="https://github.com/DiegoVAReis" target="_blank">GitHub | <span
+                                id="logo-github"></span></a></li>
                 </ul>
             </div>
 
             <div id="footer-contact" class="text-footer">
                 <p class="footer-title">Contato.</p>
-                <p class="footer-desc"><a href="mailto:contato@sunglass.com.br">contato@sunglass.com.br</a><br /> (11) 9900-0000</p>
+                <p class="footer-desc"><a href="mailto:contato@sunglass.com.br">contato@sunglass.com.br</a><br /> (11)
+                    9900-0000</p>
             </div>
 
-            <div id="footer-copyright">
-                <p>Todos os direitos reservados. Desenvolvido por <a href="https://github.com/DiegoVAReis" target="_blank">Diego Reis</a></p>
-            </div>   
-        
         </div>
-        
+
+        <div id="footer-copyright">
+            <p>Todos os direitos reservados. Desenvolvido por <a href="https://github.com/DiegoVAReis"
+                    target="_blank">Diego Reis</a></p>
+        </div>
+
     </footer>
     <!--Fim Footer-->
 
+    <script type="text/javascript" src="service/menu.js"></script>
     <script type="text/javascript" src="service/Utils.js"></script>
 </body>
+
 </html>
